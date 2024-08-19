@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Rivaldo</a>
+          <!-- <img src="img/logo.jpg" style="width: 50px; height: 20px;"/> -->
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/rivaldo.png" alt="" />
+        </div>
+        <h1>Rivaldo Fernandez</h1>
+        <h2>Developer - UI/UX</h2>
+        <div class="redes">
+          <a
+            href="https://www.facebook.com/profile.php?id=61562485663223&mibextid=ZbWKwL"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/rivaldo-fernandez"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://discord.gg/S57AgHUP"
+            id="discord-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-discord"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/rivaldo_fcr7/"
+            id="instagram-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@rivaldo.111?_t=8p0mOYl1y5t&_r=1"
+            id="tiktok-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Rivaldo Fernández.</span> Estudiante de Diseño y
+          Desarrollo de Software en quinto ciclo de TECSUP. Durante una pasantía
+          en Fibertel, completé un proyecto de monitoreo y automatización de
+          riego utilizando React y Vite, desarrollando interfaces y optimizando
+          el rendimiento. Actualmente, me enfoco en continuar mi formación y
+          aplicar mis habilidades en futuros desafíos profesionales.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                16-11-2004
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                +51 993 074 958
+              </li>
+              <li>
+                <strong>Email</strong>
+                rivaldoqquelcca@gmail.com
+              </li>
+              <li>
+                <strong>Sitio Web</strong>
+                www.rivaldofernandez.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Apipa III, Cerro Colorado, Arequipa
+              </li>
+              <li>
+                <strong>Estado</strong>
+                <span>Disponible</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-volleyball"></i>
+                <span>Voleibol</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-soccer-ball"></i>
+                <span>Fútbol</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJES</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-video"></i>
+                <span>Video</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTO</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-code"></i>
+                <span>Developer</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-film"></i>
+                <span>CINE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MÚSICA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="download-btn">
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Técnicas</h3>
+            <div class="skill">
+              <span>Programación Frontend</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Programación Backend</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>35%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>DevOps y CI/CD</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React JS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>UX/UI</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Profesionales</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/p1.jpg" alt="" />
+            <div class="overlay">
+              <h3>Sistema Riego</h3>
+              <p>React y Vite</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p2.jpg" alt="" />
+            <div class="overlay">
+              <h3>Control de Asistencia</h3>
+              <p>React</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p3.jpg" alt="" />
+            <div class="overlay">
+              <h3>Sistemas Citas</h3>
+              <p>Laravel y Mysql</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Tu Nombre"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Dirección de correo"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Tema"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+            <button id="sendButton">
+              Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+            <div id="response-message"></div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="col">
+            <div class="map_section">
+              <div id="map"></div>
+            </div>
+
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Cerro Colorado - Arequipa
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamanos: +51 993 074 958
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: rivaldoqquelcca@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a
+          href="https://www.facebook.com/profile.php?id=61562485663223&mibextid=ZbWKwL"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/rivaldo-fernandez"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://discord.gg/S57AgHUP"
+          id="discord-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-discord"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/rivaldo_fcr7/"
+          id="instagram-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@rivaldo.111?_t=8p0mOYl1y5t&_r=1"
+          id="tiktok-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+  </body>
+</html>
