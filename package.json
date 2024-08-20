@@ -13,6 +13,7 @@
     "http": "^0.0.1-security",
     "nodemailer": "^6.9.14",
     "path": "^0.12.7",
+    "serve-favicon": "^2.5.0",
     "tarea": "file:"
   }
 }

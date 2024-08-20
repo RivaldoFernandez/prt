@@ -4,13 +4,14 @@ const path = require('path');
 
 // Función para manejar las solicitudes
 function handleRequest(req, res) {
+    // Construir la ruta del archivo
     let filePath = path.join(__dirname, 'Public', req.url === '/' ? 'index.html' : req.url);
 
     // Extensión del archivo
     let extname = path.extname(filePath);
-    let contentType = 'text/html';
 
     // Tipos de contenido según la extensión
+    let contentType = 'text/html';
     switch (extname) {
         case '.js':
             contentType = 'text/javascript';
@@ -33,21 +34,27 @@ function handleRequest(req, res) {
         case '.pdf':
             contentType = 'application/pdf';
             break;
+        case '.svg':
+            contentType = 'image/svg+xml';
+            break;
     }
 
     // Leer archivo y responder al cliente
     fs.readFile(filePath, (error, content) => {
         if (error) {
-            if (error.code == 'ENOENT') {
+            if (error.code === 'ENOENT') {
+                // Archivo no encontrado, servir página 404
                 fs.readFile(path.join(__dirname, 'Public', '404.html'), (err, content) => {
                     res.writeHead(200, { 'Content-Type': 'text/html' });
                     res.end(content, 'utf8');
                 });
             } else {
+                // Otro error del servidor
                 res.writeHead(500);
                 res.end(`Server Error: ${error.code}`);
             }
         } else {
+            // Servir el contenido solicitado
             res.writeHead(200, { 'Content-Type': contentType });
             res.end(content, 'utf8');
         }
